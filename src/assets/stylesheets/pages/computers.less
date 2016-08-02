@@ -1,0 +1,55 @@
+@import '../palette';
+@import '../styleguide';
+
+.page_computers{
+  text-align: center;
+
+  &-title{
+    .styleguide-title;
+  }
+
+  &-filters{
+    text-align: left;
+
+    input{
+      margin-right: 15px;
+    }
+  }
+
+  &-list{
+    font-family: Arial, sans-serif;
+    text-align: right;
+
+    &-item{
+      text-align: left;
+      max-width: 600px;
+      border-bottom: 2px @color_secondary solid;
+
+      &--description{
+        font-size: 14px;
+      }
+
+      &--image{
+        max-width: 600px;
+
+        img{
+          max-width: 100%;
+        }
+      }
+
+      &--more{
+        .styleguide-cta;
+        margin: 0 0 25px 10px ;
+        width: 50px;
+        display: inline-block;
+      }
+
+      &--add{
+        .styleguide-cta;
+        margin: 0 0 25px 20px ;
+        width: 50px;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../palette';
+@import '../styleguide';
+
+.page_not-found{
+  text-align: center;
+
+  &-title{
+    .styleguide-title;
+  }
+
+  &-image{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+
+    img{
+      max-width: 100%;
+    }
+    p{
+      position: absolute;
+      top: 17px;
+      left: 100px;
+      color: @color_primary;
+      font-size: 100px;
+    }
+  }
+
+  &-cta{
+    width: 60px;
+    .styleguide-cta;
+  }
+}
